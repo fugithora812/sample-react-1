@@ -1,9 +1,10 @@
 FROM node:16.13.0-alpine3.12
 ENV NODE_VERSION 14.18.1
 
-WORKDIR /front
+ARG HOME_DIR=/home/front
+WORKDIR ${HOME_DIR}
 
-COPY ./front /front
+COPY ./front ${HOME_DIR}
 
 EXPOSE 3000
 
