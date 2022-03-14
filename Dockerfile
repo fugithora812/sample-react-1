@@ -1,4 +1,4 @@
-FROM node:16.13.0-alpine3.12
+FROM node:16.14.0-buster
 ENV NODE_VERSION 14.18.1
 
 ARG HOME_DIR=/home/front
